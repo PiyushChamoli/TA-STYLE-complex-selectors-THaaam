@@ -148,6 +148,8 @@ strong {
     font-weight: 500;
     margin: 1rem 0;
     cursor: pointer;
+    position: relative;
+    z-index: 99;
 }
 
 #toggle, .bars {
@@ -253,12 +255,12 @@ strong {
     background-color: #59BFC2;
     font-size: 20px;
     font-weight: 600;
-    width: 180px;
-    padding: 10px 0;
+    /* width: 180px; */
+    padding: 10px 0 10px 30px;
     position: relative;
 }
 
-/* .article-section a::before {
+.article-section a::before {
     position:absolute;
     content: "";
     border-left: 20px solid white;
@@ -267,7 +269,20 @@ strong {
     border-top: 20px solid transparent;
     left:0;
     top: 0;
-} */
+    border-width: 25px;
+}
+
+.article-section a::after {
+    position:absolute;
+    content: "";
+    border-left: 20px solid #59BFC2;
+    border-right: 20px solid transparent;
+    border-bottom: 20px solid transparent;
+    border-top: 20px solid transparent;
+    right:-50px;
+    top: 0;
+    border-width: 25px;
+}
 
 /*Score Table*/
 
